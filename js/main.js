@@ -1,26 +1,28 @@
 $(document).ready(function(){
     $("#validate").bind('click', function () {
         var username = $('#username'),
-            password = $('#password');
+            password = $('#password'),
+            userNameLabel = $('#userNameLabel'),
+            passRequired = $('#passRequired');
  
         if (validateEmail( username.val() ) ) {
             username.removeClass('has-error');
-            $('#userNameLabel').removeClass('pull-right').css({
+            userNameLabel.removeClass('pull-right').css({
                 color: '#333',
             }).text('Username');
         } else {
             username.addClass('has-error');
-            $('#userNameLabel').addClass('pull-right').css({
+            userNameLabel.addClass('pull-right').css({
                 color: 'red',
             }).text('Required field');
             return;
         }
 
         if ( password.val() ) {
-            $('#passRequired').hide();
+            passRequired.hide();
             password.removeClass('has-error');
         } else {
-            $('#passRequired').show();
+            passRequired.show();
             password.addClass('has-error');
             return;
         }
