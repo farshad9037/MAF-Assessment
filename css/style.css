@@ -97,3 +97,12 @@ div.description .sub2 {
     font-size: 1.6666666666666665vw;
     font-weight: bold;
 }
+
+.has-error {
+    border: 1px solid red;
+}
+
+#passRequired {
+    display: none;
+    color: red;
+}

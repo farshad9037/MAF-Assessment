@@ -25,14 +25,16 @@
                 <h3 class="text-center login-sub-title">Unlock Awesome Features!</h3>
                 <div class="account-wall">
                     <form class="form-signin">
-                        <label for="username"><dfn>Username</dfn></label>
-                        <input type="text" name="username" class="form-control username" placeholder="Email" required autofocus>
-                        <input type="password" name="password" class="form-control password" placeholder="Password" required>
+                        <label for="username" id="userNameLabel"><dfn>Username</dfn></label>
+                        <input type="text" name="username" class="form-control username" placeholder="Email" id="username" required autofocus>
+                        <label for="username" class="pull-right" id="passRequired"><dfn>Required field</dfn></label>
+                        <input type="password" name="password" class="form-control password" placeholder="Password" id="password" required>
                         <label class="checkbox pull-left">
                             <input type="checkbox" value="remember-me"> Keep me logged in
                         </label>
                         <a href="#" class="pull-right need-help">Forgot password?</a>
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">SIGN IN</button>
+                        <!-- <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit">SIGN IN</button> -->
+                        <button class="btn btn-lg btn-primary btn-block" type="button" id="validate">SIGN IN</button>
                         <span class="clearfix"></span>
                     </form>
                 </div>
