@@ -106,3 +106,13 @@ div.description .sub2 {
     display: none;
     color: red;
 }
+
+.searchField {
+    border-radius: 0;
+    height: 40px;
+    margin-top: 14px;
+    background-color: #F0F7FE;
+    border: 1px solid #F0f7fE;
+    display: none;
+    padding-top: 0;
+}

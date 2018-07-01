@@ -28,6 +28,10 @@ $(document).ready(function(){
         authenticate(username.val(), password.val());
     });
 
+    $('#searchImage').bind('click', function () {
+        $('.searchField').show();
+    });
+
     function authenticate(username, password) {
         $.post('sampleApi', {
             username: username,
